@@ -54,7 +54,7 @@ $(document).ready(function () {
 
   var swiper = new Swiper(".category_home_main", {
     slidesPerView: "auto",
-    spaceBetween: 30,
+    spaceBetween: 20,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
