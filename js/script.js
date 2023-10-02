@@ -160,4 +160,15 @@ $(document).ready(function () {
     $(this).addClass("active");
     $(this).siblings().removeClass("active");
   });
+
+
+  $(".arrow").click(function () {
+    // Find the parent .main_category of the clicked arrow
+    var parentMainCategory = $(this).closest('.main_category');
+  
+    // Toggle classes within the same .main_category container
+    $(this).toggleClass("active")
+    parentMainCategory.find('.main_cate').toggleClass("active");
+    parentMainCategory.find('.sub_cate_main').toggleClass("active");
+  });
 });
